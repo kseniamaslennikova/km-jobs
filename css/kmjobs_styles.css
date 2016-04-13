@@ -1,0 +1,202 @@
+/* mobile: Стили для экранов с максимальной шириной 480px */
+.kmjob_list_container {
+    background-color: lightcyan ;
+    display:block;
+
+}
+
+.kmjob_list {
+    width:100%;
+    display:block;
+    margin-bottom: 24px;
+    padding:12px;
+}
+
+.kmjob_list:nth-child(odd){
+    background-color: transparent;
+
+}
+
+.kmjob_list:nth-child(even){
+    background-color: #FFFFFF;
+
+}
+
+.kmjob_list date{
+    font-style: italic;
+    display: block;
+}
+
+.kmjob_list ul{
+    width:100%;
+    display:inline-block;
+}
+
+.kmjob_list ul li{
+    width:100%;
+
+}
+
+.kmjobs_filters {
+    width:100%;
+    display:inline-block;
+    margin-bottom: 24px;
+}
+
+.kmjobs_filters label{
+    display:none;
+}
+
+.kmjobs_filters .city{
+    width:100%;
+    display:inline-block;
+    float:left;
+    padding-bottom: 18px;
+}
+
+.kmjobs_filters select[name="kmjobs_citylocation"]{
+    width:100%;
+    display:inline-block;
+    float:left;
+}
+
+.kmjobs_filters .branch{
+    width:100%;
+    display:inline-block;
+    float:left;
+    padding-bottom: 18px;
+}
+
+.kmjobs_filters select[name="kmjobs_branchlocation"]{
+    width:100%;
+    display:inline-block;
+    float:left;
+}
+
+
+
+/* tablet: Стили для экранов с максимальной шириной 1024px */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .kmjob_list_container {
+        background-color: lavender;
+    }
+
+    .kmjob_list h2{
+        display:inline-block;
+        width:70%;
+        float:left;
+        text-align: left;
+    }
+
+    .kmjob_list date{
+        display:inline-block;
+        width:30%;
+        float:left;
+        text-align: right;
+    }
+
+    .kmjobs_filters label{
+        display:none;
+    }
+
+    .kmjobs_filters .city{
+        width:50%;
+        display:inline-block;
+        float:left;
+    }
+
+    .kmjobs_filters select[name="kmjobs_citylocation"]{
+        width:90%;
+        display:inline-block;
+        float:left;
+    }
+
+    .kmjobs_filters .branch{
+        width:50%;
+        display:inline-block;
+        float:left;
+    }
+
+    .kmjobs_filters select[name="kmjobs_branchlocation"]{
+        width:90%;
+        display:inline-block;
+        float:left;
+    }
+
+    .kmjob_list ul li{
+        display:inline-block;
+        width:50%;
+        float:left;
+    }
+
+    .kmjob_list ul li:nth-child(2){
+        text-align:right;
+    }
+
+    .kmjob_list ul li:last-child{
+        display:inline-block;
+        width:100%;
+        float:left;
+        padding-top:18px;
+
+    }
+}
+
+/* desktop: Стили для экранов с минимальной шириной 1024px */
+@media only screen and (min-width: 1025px) {
+    .kmjob_list_container {
+        background-color: papayawhip;
+    }
+
+    .kmjob_list h2{
+        display:inline-block;
+        width:70%;
+        float:left;
+        text-align: left;
+    }
+
+    .kmjob_list date{
+        display:inline-block;
+        width:30%;
+        float:left;
+        text-align: right;
+    }
+
+    .kmjob_list ul li{
+        display:inline-block;
+        width:30%;
+        float:left;
+
+    }
+
+    .kmjobs_filters label{
+        width:20%;
+        display:inline-block;
+        float:left;
+        font-weight: 600;
+     }
+
+    .kmjobs_filters .city{
+        width:50%;
+        display:inline-block;
+        float:left;
+    }
+
+    .kmjobs_filters select[name="kmjobs_citylocation"]{
+        width:70%;
+        display:inline-block;
+        float:left;
+    }
+
+    .kmjobs_filters .branch{
+        width:50%;
+        display:inline-block;
+        float:left;
+    }
+
+    .kmjobs_filters select[name="kmjobs_branchlocation"]{
+        width:70%;
+        display:inline-block;
+        float:left;
+    }
+}
